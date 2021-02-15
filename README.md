@@ -7,4 +7,4 @@ All you need to use it, is to pass your folder path that contains your text docu
 
 The idea is ,for example :
 
- if you want to know what are the documents that contains "Artificial Intelligence " phrase and you have for example 200 documents so instead of opening the folder and search for each file , you just will pass your folder and run my application and it will retrieve sorted documents that contains this phrase. 
+ if you want to know what are the documents that contain "Artificial Intelligence " phrase and you have for example 200 documents so instead of opening the folder and search for each file , you just will pass your folder and run my application and it will retrieve sorted documents that contains this phrase. 
