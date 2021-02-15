@@ -1,0 +1,57 @@
+
+<GUI>:
+   query: query
+   GridLayout:
+
+      cols:1
+
+      size :root.width-200,root.height-200
+      pos: 100 ,100
+      GridLayout:
+
+         cols:1
+         rows:3
+         BoxLayout:
+            size :root.width-200,root.height-200
+            pos: 100 ,100
+            Label:
+               text: " Searchy !"
+               font_size: 30
+               size_hint :.8,None
+               height:10
+               padding_y: 20
+
+         BoxLayout:
+            size :root.width-200,root.height-200
+            pos: 100 ,100
+            BoxLayout:
+               size :root.width-200,root.height-200
+               pos: 100 ,100
+               ScrollView:
+                  id : scrol
+
+                  size_hint:(0.4, .4)
+
+
+                  TextInput:
+                     id: query
+                     multiline:True
+                     hint_text:'Enter your query'
+                     size_hint: None, None
+                     height: scrol.height
+                     width:scrol.width
+
+                     padding_x: 20
+
+
+               Button:
+                  text:" "
+                  id: btn
+                  background_normal :"edit_search_img.png"
+                  size_hint :None,None
+                  height :40
+                  width:30
+                  font_size: 20
+
+                  on_press:root.pressed()
+      GridLayout:
